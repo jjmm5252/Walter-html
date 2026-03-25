@@ -1,0 +1,36 @@
+/* Configuración del video para que ocupe todo el fondo */
+#video-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;      /* Ocupa todo el ancho de la ventana */
+  height: 100vh;     /* Ocupa todo el alto de la ventana */
+  object-fit: cover; /* Recorta el video para que no se estire */
+  z-index: -1;       /* Lo envía al fondo, detrás del contenido */
+  object-fit: cover;
+}
+
+/* Estilo para tus títulos h1 con la línea divisoria */
+h1,p,img {
+  position: relative;
+  z-index: 1;  
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent; /* Asegura que el fondo blanco del body no tape el video */
+    overflow-x: hidden;      /* Evita que aparezca una barra de scroll horizontal */
+}
+/* Agrega esto para que el video no brille tanto y el texto se lea mejor */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Capa oscura muy suave */
+  z-index: 0; /* Por encima del video (-1) pero detrás del texto (1) */
+  pointer-events: none;
+}
+
