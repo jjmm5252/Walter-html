@@ -11,22 +11,24 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 100px;
-  border: 2px solid #cf1111;  /* Agregar un borde rojo */
+  border: 2px solid #cf1111; /* Agregar un borde rojo */
   box-shadow: 7px 5px 10px #cf1111; /* Agregar un efecto de sombra roja */
-  
+
   /* ponerle iluminacion de seleccion al boton*/
-    transition: all 0.4s ease; /* Controla la velocidad de la iluminación */
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid transparent; /* Reserva el espacio para un borde si quieres */
+  transition: all 0.4s ease; /* Controla la velocidad de la iluminación */
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid transparent; /* Reserva el espacio para un borde si quieres */
 }
 .boton:hover {
-    background-color: #cf1111;    /* Color de fondo al pasar el mouse */
-    color: #ffffff !important;   /* Color del texto para que resalte */
-    box-shadow: 0 0 20px #cf1111; /* El resplandor blanco (puedes cambiar el color) */
-    transform: translateY(1.05);  /* El botón sube un poquito, dando efecto de selección */
-    cursor: pointer;
+  background-color: #cf1111; /* Color de fondo al pasar el mouse */
+  color: #ffffff !important; /* Color del texto para que resalte */
+  box-shadow: 0 0 20px #cf1111; /* El resplandor blanco (puedes cambiar el color) */
+  transform: translateY(
+    1.05
+  ); /* El botón sube un poquito, dando efecto de selección */
+  cursor: pointer;
 }
 /*fin de iluminacion del seleccion del boton*/
 
@@ -45,12 +47,11 @@ ul.menu li {
 }
 
 /* Estilo para la ralla dejabo de un titulo o texto que se acomode dependiendo del texto */
-.linea{
- display: inline-block;
- border-bottom: 2px solid #cf1111;
- padding-bottom: 5px;
+.linea {
+  display: inline-block;
+  border-bottom: 2px solid #cf1111;
+  padding-bottom: 5px;
 }
 p {
   color: #ffffff;
 }
-
