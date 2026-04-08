@@ -3,6 +3,7 @@ body {
   font-family: negrita, sans-serif;
   background-color: #000000;
   color: #cf1111;
+  text-align: center;
 }
 .boton {
   display: inline-block;
